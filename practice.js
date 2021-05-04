@@ -69,11 +69,12 @@ function greeting (name) {
 
 //Code Here
 
-function newGreeting(name) {
+
+let newGreeting = function (name) {
   return "Hello, " + name;
 }
 
-newGreeting("John");
+console.log(newGreeting("John "));
 
 
 
@@ -130,18 +131,16 @@ console.log(devMountainClassPet);
 
 // Code here
 
-function nameCheck(name) {
-  if(name = "Steven") {
-    return "What is up Steven?";    
-  } 
-  else(name = "Bryan") {
-    return "Hey Bryan!";
+function nameCheck() {
+  let name = "Steven";
+
+  if(name === "Steven") {console.log("What is up Steven?")}
+  else if(name === "Bryan") {console.log("Hey Bryan!")}
+  else {console.log("Cool name, Alex")}
+  return name;
   }
-  }
-
-console.log(nameCheck("Bryan"))
-
-
+  
+let name = nameCheck();
 
 
 //////////////////PROBLEM 11////////////////////
@@ -152,10 +151,23 @@ console.log(nameCheck("Bryan"))
 
 //Code Here
 
+function add (num1, num2) {
+  return num1 + num2;
+}
+
+// console.log(add(3,4));
+
+
+
+
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
 //Code Here
+
+var mathSum = add(3,4);
+console.log(mathSum);
+
 
 //////////////////PROBLEM 12////////////////////
 
@@ -167,6 +179,19 @@ console.log(nameCheck("Bryan"))
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 // Code here
+
+function faveColorFinder () {
+
+  let color = "";
+
+  if(color === "red") {console.log("red is a great color")}
+  else if(color === "green") {console.log("green is a solid favorite color")}
+  else if(color === "black") {console.log("so trendy")}
+  else {console.log("you need to evaluate your favorite color choice")}
+  return color;
+  }
+  
+let color = faveColorFinder();
 
 //////////////////PROBLEM 13////////////////////
 
